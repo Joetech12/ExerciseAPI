@@ -26,6 +26,6 @@ const BookSchema = new mongoose.Schema({
     minlength: 3,
     maxlength: 20,
   },
-});
+}, { timestamps: true });
 
 module.exports = mongoose.model('Book', BookSchema);
